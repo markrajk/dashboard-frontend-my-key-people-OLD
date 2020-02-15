@@ -1,0 +1,409 @@
+$green-gradient: linear-gradient(#3CF166, #17DE24);
+$orange-gradient: linear-gradient(#F5E144, #FFA30F);
+$red-gradient: linear-gradient(#FA2020, #EF0049);
+
+@mixin respond($breakpoint) {
+    @if $breakpoint == desktop-sm {
+        @media (max-width: 767px) { @content };
+    }
+    @if $breakpoint == desktop-md {
+        @media (max-width: 991px) { @content };
+    }
+    @if $breakpoint == desktop-lg {
+        @media (max-width: 1199px) { @content };
+    }
+    @if $breakpoint == desktop-xl {
+        @media (max-width: 1500px) { @content };
+    }
+    @if $breakpoint == desktop-xxl {
+        @media (max-width: 1800px) { @content };
+    }
+}
+
+html {
+    font-size: 62.5%;
+    @include respond(desktop-xxl) {
+        font-size: 55%;
+    }
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F8F9FB;
+}
+
+
+//SIDE BAR STYLES
+.sidebar {
+    height: 100vh;
+    min-width: 24rem;
+    z-index: 1000;
+    @include respond(desktop-lg) {
+        min-width: 23rem;
+    }
+    @include respond(desktop-md) {
+        min-width: 22rem;
+    }
+    @include respond(desktop-sm) {
+        min-width: 21rem;
+    }
+    & .profile {
+        & img {
+            width: 6.7rem;
+        }
+        &-info {
+            white-space: nowrap;
+            & h4 {
+                font-size: 1.7rem;
+                font-weight: 600;
+                margin-bottom: 3px;
+                & span {
+                    display: inline-block;
+                    width: .7rem;
+                    height: .7rem;
+                    background-color: #2EBD41;
+                    border-radius: 50%;
+                    margin-left: .3rem;
+                }
+            }
+            & p {
+                font-size: 1.3rem;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-group {
+        font-size: 1.2rem;
+        margin-top: 3rem;
+        @include respond(desktop-lg) {
+            margin-top: 2.5rem;
+        }
+        @include respond(desktop-md) {
+            margin-top: 2rem;
+        }
+        & h4 {
+            font-size: inherit;
+            color: #687181;
+            margin: 0;
+        }
+        & .custom-select {
+            font-family: inherit;
+            font-size: inherit;
+            color: #002257;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+        }
+
+        & ul li {
+            margin-top: 1.7rem;
+            @include respond(desktop-lg) {
+                margin-top: 1.5rem;
+            }
+            @include respond(desktop-md) {
+                margin-top: 1.2rem;
+            }
+            & a {
+                font-size: 1.3rem;
+                text-decoration: none;
+                color: #002257;
+            }
+        }
+    }
+}
+
+// RESULTS STYLES
+.results {
+    max-height: 100vh;
+    padding: 1rem;
+    font-family: 'Lato', sans-serif;
+
+    &-header {
+        height: 14rem;
+    }
+
+    &-body {
+        max-height: calc(100vh - 17rem);
+        //overflow: hidden;
+    }
+    & .logout {
+        font-size: 1.5rem;
+        & a {
+            font-weight: 600; color: #6E747E;
+
+            & i {
+                font-size: 1.8rem;
+            }
+        }
+    }
+
+    & h2 {
+        font-size: 2.7rem;
+        font-weight: 600;
+        color: #1A173B;
+    }
+
+    & .choose {
+        cursor: pointer;
+        font-size: 1.6rem;
+        & span {
+            
+            font-weight: 700;
+        }
+    }
+
+    //PEOPLE CARD
+    .people {
+        height: 100%!important;
+
+        & .card-header {
+            padding: 2.3rem;
+            & h3 {
+                font-size: 1.9rem;
+                font-weight: 700;
+                color: #1A173B;
+            }
+
+            & .add-btn {
+                display: inline-block;
+                position: relative;
+                width: 3rem;
+                height: 3rem;
+                border: 1.5px solid #0087FF;
+                border-radius: 50%;
+                cursor: pointer;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 1rem;
+                    height: .2rem;
+                    background-color: #0087FF;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                }
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    width: .2rem;
+                    height: 1rem;
+                    background-color: #0087FF;
+                    top: 50%;
+                    left:50%;
+                    transform: translate(-50%,-50%);
+                }
+            }
+        }
+
+        & .card-body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+
+            &::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
+            }
+        }
+
+        & .list-group-item {
+            position: relative;
+            padding: .9rem 2.5rem;
+            font-size: 1.3rem;
+            color: #354052;
+
+            &.active {
+                border-color: #EAEBEE;
+                background-color: #F4FAFF;
+            }
+            & img {
+                width: 2.7rem;
+                height: 2.7rem;
+            }
+
+            & .name {
+                padding-left: 1.8rem;
+                font-weight: 700;
+                white-space: nowrap;
+            }
+
+            & .prof {
+                position: absolute;
+                width: 35%;
+                top:50%;
+                left:57%;
+                transform: translate(-50%,-50%);
+            }
+
+            & .btn-custom {
+                font-size: 13px;
+                text-decoration: none;
+                display: inline-block;
+                width: 8rem;
+                padding: .65rem 0;
+                color: #fff;
+                font-weight: 700;
+                border-radius: 3px;
+
+                &-green {
+                    background: $green-gradient;
+                }
+                &-orange {
+                    background: $orange-gradient;
+                }
+                &-red {
+                    background: $red-gradient;
+                }
+            }
+        }
+    }
+
+    // GRAPH CARD
+    & .development {
+        padding: 2rem;
+        height: 98%!important;
+        &-header {
+            margin-bottom: 1.3rem;
+            & h3 {
+                font-size: 1.9rem;
+                color: #1A173B;
+
+                & span {
+                    font-weight: 700;
+                }
+            }
+            & a {
+                font-size: 1.4rem;
+                white-space: nowrap;
+
+                & i {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        & .choose {
+            cursor: pointer;
+            font-size: 1.6rem;
+            & span {
+                font-weight: 700;
+        }
+        }
+
+        &-graph {
+            height: 100%;
+            padding: 2rem;
+            margin-bottom: 1.2rem;
+
+            & .bar {
+                position: relative;
+                width: 50%;
+                height: 100%;
+                background-color: rgba(193, 192, 200, .24);
+                border-radius: 5px;
+                @include respond(desktop-lg) {
+                    width: 60%;
+                }
+                @include respond(desktop-md) {
+                    width: 70%;
+                }
+                @include respond(desktop-sm) {
+                    width: 90%;
+                }
+
+
+                &-fill {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 0;
+                    left: 0;
+                    border-radius: 5px;
+
+                    &-green {
+                        background: $green-gradient;
+                    }
+                    &-orange {
+                        background: $orange-gradient;
+                    }
+                    &-red {
+                        background: $red-gradient;
+                    }
+                }
+
+                &-info {
+                    position: absolute;
+                    width: 100%;
+                    bottom: -2.5rem;
+                    left: 0;
+                    white-space: nowrap;
+                    font-size: 1.2rem;
+                    // font-weight: 400;
+                    color: #6E6C80;
+                    text-align: center;
+
+                    @include respond(desktop-lg) {
+                        font-size: 1.1rem;
+                    }
+                    @include respond(desktop-md) {
+                        font-size: 1rem;
+                    }
+                    @include respond(desktop-sm) {
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+    }
+
+    // IMPROVEMENT CARD
+    & .improvement {
+        margin-top: 1%!important;
+        height: 98%!important;
+
+        &-header {
+            padding: 2.5rem 2rem;
+            & h3 {
+                font-size: 1.9rem;
+                font-weight: 700;
+                color: #1A173B;
+            }
+            & a {
+                font-size: 1.4rem;
+                white-space: nowrap;
+
+                & i {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        & .list-group-flush {
+            overflow-y: scroll;
+            overflow-x: hidden;
+            -ms-overflow-style: none;  /* Internet Explorer 10+ */
+            scrollbar-width: none;  /* Firefox */
+
+            &::-webkit-scrollbar { 
+                display: none;  /* Safari and Chrome */
+            }
+        }
+
+        & .list-group-item {
+            padding: 1.5rem 2rem;
+            font-size: 1.4rem;
+            color: #2C2F34;
+
+            & p {
+                width: 100%;
+                // @include respond(desktop-xl) {
+                //     width: 100%;
+                // }
+            }
+        }
+    }
+}
+
+
+

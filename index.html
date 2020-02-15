@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Responsive</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="d-flex">
+    <!-- SIDEBAR SECTION -->
+    <div class="sidebar card bg-white shadow">
+        <div class="card-body p-5">
+            <div class="profile d-flex align-items-center">
+                <img class="rounded-circle" src="img/profile-pic.png" alt="">
+                <div class="profile-info ml-3">
+                    <h4>Andrew <span class="align-middle"></span></h4>
+                    <p class="text-muted m-0">Boss</p>
+                </div>
+            </div>
+
+            <div class="sidebar-group pt-3">
+                <h4 class="text-muted font-weight-bold">GIVE FEEDBACK</h4>
+                <select class="custom-select mt-2">
+                    <option selected>To your people</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                </select>
+            </div>
+
+            <div class="sidebar-group pt-3">
+                <h4 class="text-muted font-weight-bold">TEAMS</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Export results</a></li>
+                    <li><a href="#">Manage teams</a></li>
+                    <li><a href="#">Create new team</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group pt-3">
+                <h4 class="text-muted font-weight-bold">PEOPLE</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">Export results</a></li>
+                    <li><a href="#">Manage people</a></li>
+                    <li><a href="#">Invite new people</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-group pt-3">
+                <h4 class="text-muted font-weight-bold">Me</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">Results</a></li>
+                    <li><a href="#">My account</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- RESULTS SECTION -->
+    <div class="results w-100 px-5 mr-3">
+        <div class="results-header">
+            <div class="logout col-12 d-flex align-items-center justify-content-end p-0 pt-5">
+                <a href="#">Logout <i class="material-icons md-18 align-middle">exit_to_app</i></a>
+            </div>
+    
+            <h2 class="mb-4">Results</h2>
+            <p class="choose mb-4"><span>My key people |</span> All people</p>
+        </div>
+
+        <div class="results-body h-100 pb-2">
+            <div class="row h-100">
+                <!-- PEOPLE CARD -->
+                <div class="col-6 h-100">
+                    <div class="people card bg-white">
+                        <div class="card-header bg-white d-flex justify-content-between align-items-center">
+                            <h3 class="m-0">People <span>33</span></h3>
+                            <span class="add-btn"></span>
+                        </div>
+                        <div class="card-body p-0 h-100">
+                            <ul class="list-group-flush p-0 m-0">
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-01.png" alt="#">
+                                    <p class="name m-0 flex-fill">Ollie Stewart</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Software Architect</p>
+                                    <div class="text-right"><a href="#" class="btn-custom btn-custom-green text-center">Great</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-02.png" alt="#">
+                                    <p class="name m-0 flex-fill">Madge Casey</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Junior Python Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-green text-center">Good</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-03.png" alt="#">
+                                    <p class="name m-0 flex-fill">Gilbert Mack</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Senior Python Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-green text-center">Good</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center active">
+                                    <img class="rounded-circle" src="img/p-04.png" alt="#">
+                                    <p class="name m-0 flex-fill">Jesse Gregory</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Junior Javascript Developer</p>
+                                    <div><a class="mr-1" href="#">Open Profile</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-05.png" alt="#">
+                                    <p class="name m-0 flex-fill">Annie Kelly</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Senior Javascript Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-green text-center">Good</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-06.png" alt="#">
+                                    <p class="name m-0 flex-fill">Edwin Love</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Senior Javascript Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-green text-center">Good</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-07.png" alt="#">
+                                    <p class="name m-0 flex-fill">Floyd Roberson</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Software Architect</p>
+                                    <div><a href="#" class="btn-custom btn-custom-green text-center">Good</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-08.png" alt="#">
+                                    <p class="name m-0 flex-fill">Kate Lindsey</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Software Architect</p>
+                                    <div><a href="#" class="btn-custom btn-custom-green text-center">Good</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-09.png" alt="#">
+                                    <p class="name m-0 flex-fill">Ernest Wright</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Bootstrap Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-orange text-center">Ok</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-10.png" alt="#">
+                                    <p class="name m-0 flex-fill">Jeff Copeland</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Software Architect</p>
+                                    <div><a href="#" class="btn-custom btn-custom-orange text-center">Ok</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-11.png" alt="#">
+                                    <p class="name m-0 flex-fill">Alan Yates</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Junior Python Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-red text-center">Bad</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-12.png" alt="#">
+                                    <p class="name m-0 flex-fill">Jose Thornton</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Senior Javascript Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-red text-center">Bad</a></div>
+                                </li>
+                                <li class="list-group-item d-flex align-items-center">
+                                    <img class="rounded-circle" src="img/p-12.png" alt="#">
+                                    <p class="name m-0 flex-fill">Jose Thornton</p class="m-0">
+                                    <p class="prof m-0 text-start d-none d-xl-block">Senior Javascript Developer</p>
+                                    <div><a href="#" class="btn-custom btn-custom-red text-center">Bad</a></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-6 h-100">
+                    <!-- DEVELOPMENT CARD-->
+                    <div class="row h-50">
+                        <div class="col-12 h-100">
+                            <div class="card card-body development bg-white">
+                                <div class=" development-header d-flex justify-content-between align-items-center">
+                                    <h3><span>Jess Gregory's</span> Development</h3>
+                                    <a href="#">Share<i class="material-icons md-18 align-middle">keyboard_arrow_down</i></a>
+                                </div>
+                                <p class="choose"><span>Months |</span> Weeks</p>
+                                <div class="row development-graph justify-content-between">
+                                    <div class="col-1 p-0 justify-content-center d-xl-flex d-none">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 55%;"></div>
+                                            <div class="bar-info">JAN</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-lg-flex d-none">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-red" style="height: 40%;"></div>
+                                            <div class="bar-info">FEB</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-lg-flex d-none">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 60%;"></div>
+                                            <div class="bar-info">MAR</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-md-flex d-none">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                            <div class="bar-info">APR</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                            <div class="bar-info">MAY</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-orange" style="height: 60%;"></div>
+                                            <div class="bar-info">JUN</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                            <div class="bar-info">JUL</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                            <div class="bar-info">AUG</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 85%;"></div>
+                                            <div class="bar-info">SEP</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 70%;"></div>
+                                            <div class="bar-info">OCT</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 65%;"></div>
+                                            <div class="bar-info">NOV</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-1 p-0 justify-content-center d-flex">
+                                        <div class="bar">
+                                            <div class="bar-fill bar-fill-green" style="height: 90%;"></div>
+                                            <div class="bar-info">DEC</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- IMPROVEMENT CARD-->
+                    <div class="row h-50">
+                        <div class="col-12 h-100">
+                            <div class="card card-body improvement bg-white p-0 h-100">
+                                <div class=" improvement-header d-flex justify-content-between align-items-center border-bottom">
+                                    <h3>Improvement ideas</h3>
+                                    <a href="#">Latest<i class="material-icons md-18 align-middle">keyboard_arrow_down</i></a>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            I think the best solution is to kill our enemies first and then start our launch.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores asperiores delectus, aliquam autem possimus deleniti ipsum officia minus ratione iure?
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid error libero in dignissimos sapiente voluptatem?
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. In ad laboriosam repudiandae deserunt molestiae blanditiis nisi nobis labore quasi beatae sequi officiis, velit tempore aliquid.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            Lorem, ipsum dolor.
+                                        </p>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <p class="m-0 p-0">
+                                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus, maxime dolor blanditiis suscipit vitae commodi beatae. Officiis, beatae?
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
